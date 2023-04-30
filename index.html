@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5c1fd5e4e1.js" crossorigin="anonymous"></script>
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <section class="bgimage">
+    <!-- Nav bar Section -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="tooltip">VC
+          <span class="tooltiptext">Vageesha Choudhary</span>
+        </div>
+        <div>
+          <ul class="nav-links">
+            <div class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Projects</a></li>
+              <li><a href="/">Contact</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav bar Section -->
+    <!-- main banner -->
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Vageesha</h2>
+            <p class="hero_desc">A passionate web developer who enjoys creating responsive web applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!--End main banner-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img/me.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="aboutTitle">About Me</h1>
+          <p>As an entry-level developer passionate about programming and developing enterprise applications, I have experience creating responsive web applications using HTML, CSS, Bootstrap and JavaScript. I have a strong understanding of web standards and specifications, including RESTful and Web API, and possess excellent communication, interpersonal, organizational, analytical, and problem-solving skills. I take ownership of tasks and thrive when working under pressure to meet changing deadlines. I am adept at creating and updating technical and user manual documentation and am comfortable researching new technologies and presenting information effectively during presentations and team meetings. Additionally, I possess personal effectiveness, communication, results-oriented, teamwork, and service-oriented qualities that are essential to succeed.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Javascript Libraries and Frameworks</span><br>VueJS, Redux</li>
+              <li><span>Familiarity with the Vue.js ecosystem</span><br>Including Vue CLI, Vuex, Vue Router</li>
+              <li><span>Proficient with the VueJS framework and its core principles</span><br>Such as components, reactivity, and the
+                virtual DOM</li>
+              <li><span>Web Technologies</span><br>HTML5, CSS3, Sass, AJAX, jQuery, Bootstrap</li>
+              <li><span>Scripting Languages</span><br>Javascript, Typescript</li>
+              <li><span>Web Architecture</span></li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Dec 2020 - Dec 2021</span><br>Software Developer at To The New</li>
+              <li><span>Feb 2020 - Dec 2021</span><br>Software Developer Intern at To The New</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Jan 2022 - Current</span><br>Post-Baccalaureate Diploma in Emerging Technology at Douglas College</li>
+              <li><span>Aug 2016 - June 2020</span><br>Bachelor's in Computer Science And Engineering at Amity University</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Section-->
+  <div id="services">
+    <div class="container">
+      <h1 class="aboutTitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>With my skills and experience, I am confident that I can contribute to your team and deliver exceptional solutions that meet your client's needs.</p>
+          <a href="#">learn more</a>
+          </div>
+          <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>With my skills and experience, I am confident that I can contribute to your team and deliver exceptional solutions that meet your client's needs.</p>
+          <a href="#">learn more</a>
+          </div>
+          <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Mobile App Design</h2>
+          <p>With my skills and experience, I am confident that I can contribute to your team and deliver exceptional solutions that meet your client's needs.</p>
+          <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Services Section-->
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+     
+  </script>
+
+
+
+
+</body>
+</html>
