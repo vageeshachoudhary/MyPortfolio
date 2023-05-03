@@ -7,6 +7,10 @@
   font-family: 'Poppins',sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -146,11 +150,13 @@ li a:hover {
   font-size: 60px;
   color: black;
   justify-content: center;
+  display: inline-block;
 }
 
 .about-col-2 p{
   padding-top: 20px;
-  color:#0005;
+  color: black;
+  font-size: 18px;
 }
 
 .tab-titles{
@@ -174,7 +180,7 @@ li a:hover {
   content: '';
   width: 0;
   height: 3px;
-  background: orchid;
+  background: #ff004f;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -188,8 +194,8 @@ li a:hover {
 .tab-contents ul li{
   list-style: none;
   margin: 10px 0;
-  font-size: 14px;
-  color:orchid;
+  font-size: 18px;
+  color:#ff004f;
 }
 
 .tab-contents{
@@ -221,10 +227,224 @@ li a:hover {
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  margin-left: 160px;
 }
 
 .services-list div{
-  
+  background:gold;
+  padding: 40px;
+  font-size: medium;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s,transform 0.5s;
 }
 
+.services-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
 
+.services-list div h2{
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.services-list div a{
+  text-decoration: none;
+  color:white;
+  font-size: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div:hover{
+  background: orange;
+  transform: translateY(-10px);
+}
+
+.serviceheading{
+  text-align: center;
+}
+
+.servicesTitle{
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  font-size: 60px;
+  color: black;
+}
+
+#portfolio{
+  padding: 50px 0;
+}
+
+.projects-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-left: 350px;
+}
+
+.projects{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectTitle{
+  font-size: 60px;
+  color: black;
+  justify-content: center;
+  margin-left: 600px;
+}
+
+.projects img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+}
+
+.layer{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), orange);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  color: white;
+  text-align: center;
+}
+
+.layer h3{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+}
+
+.contact-left{
+  flex-basis: 35%;
+  margin-left: 40px;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+}
+
+.contact-left p i{
+  color: black;
+  font-size: 25px;
+}
+
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 30px;
+  color: black;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color: gold;
+  transform: translateY(-5px);
+}
+
+.btn{
+  margin: 50px auto;
+  display: block;
+  width:fit-content;
+  border: 1px solid black;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: black;
+  color: #fff;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input,form textarea{
+  width: 80%;
+  border: 0;
+  outline: none;
+  background:whitesmoke;
+  padding: 15px;
+  margin: 15px 0;
+  margin-left: 50px;
+  color: black;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background:gold;
+  font-weight: 300;
+  margin-top: 20px;
+  color: black;
+}
+
+.sub-title{
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.btn1{
+  margin-left: 0px;
+}
+
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+  margin-left: 50px;
+}
